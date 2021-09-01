@@ -1,5 +1,9 @@
 function Dog() {
-
+    this.stomach = [];
 }
 
-export default Dog;
+Dog.prototype.eat = function(cat) {
+    this.stomach.push(cat);
+}
+
+module.exports = Dog;

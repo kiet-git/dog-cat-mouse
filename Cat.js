@@ -1,6 +1,10 @@
 function Cat() {
-    this.hello = hello;
+    this.hello = 'Hello';
     this.stomach = [];
 }
 
-export default Cat;
+Cat.prototype.eat = function(mouse) {
+    this.stomach.push(mouse);
+}
+
+module.exports = Cat;
